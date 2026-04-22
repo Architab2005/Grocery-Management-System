@@ -1,0 +1,20 @@
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment / config files (keep passwords local)
+.env
+config.py
+config.py.bak
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*~
