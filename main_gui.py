@@ -40,7 +40,7 @@ class GroceryGUI:
         user = self.username_entry.get()
         pwd = self.password_entry.get()
 
-        if user == "asql" and pwd == "your_password":
+        if user == "asql" and pwd == "your password":
             self.login_frame.destroy()
             try:
                 self.conn = mysql.connector.connect(**DB_CONFIG)

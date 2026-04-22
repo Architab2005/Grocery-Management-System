@@ -9,7 +9,7 @@ conn = sql.connect(**DB_CONFIG)
 #c.execute('create table staff_details(staff_name varchar(25),staff_work varchar(10),staff_age int(3), staff_salary float(10),phone_no int(13))')
 #print('table created')
 import mysql.connector as sql
-conn=sql.connect(host='localhost',user='root',passwd='1234',database='grocerymanagementsystem')
+conn=sql.connect(host='localhost',user='root',passwd='your password',database='grocerymanagementsystem')
 if conn.is_connected():
     print('successfully connected')
 c=conn.cursor()
@@ -20,7 +20,7 @@ choice=int(input('enter your choice:'))
 if choice==1:
     user_name=input('enter your user name=')
     password=input('enter your password=')
-    while user_name=='asql' and password=='1234':
+    while user_name=='asql' and password=='your password':
         print('connected successfully')
         print('Grocery Management')
         print('1.Customer details')
