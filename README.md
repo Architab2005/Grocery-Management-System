@@ -59,7 +59,7 @@ You can add/view/search customers, products, and staff, and display a basic stoc
    }
    ```
 
-4. **(Optional) Add stock file:**
+4. **Add stock file:(Optional)**
    Create `test.txt` in the project root if you want to test the stock report.
 
 ## How to Run
