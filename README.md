@@ -1,19 +1,21 @@
 # Grocery Management System (GUI)
 
 A simple Tkinter‑based GUI for managing a grocery shop, backed by a MySQL database.  
-You can add/view/search customers, products, and staff, and display a basic stock report.
+You can add/view/search customers, products, and staff, generate bills, and display a basic stock report.
 
 ## Features
 - Add and view customer details (name, phone, cost).
 - Add and view product details (name, cost).
 - Add and view staff details (name, work, age, salary, phone).
 - Search by name for customer, product, or staff.
+- Billing system to record sales and customer bills.
 - Show stock report from `test.txt` (optional).
 
 ## Requirements
 - Python 3.x
 - MySQL (e.g., XAMPP, WAMP, or standalone MySQL)
 - `mysql-connector-python` (installed via `requirements.txt`)
+- Tkinter (built‑in in Python)
 
 ## Setup
 
@@ -46,6 +48,16 @@ You can add/view/search customers, products, and staff, and display a basic stoc
        staff_salary float(10),
        phone_no int(13)
    );
+
+   CREATE TABLE bill_items (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       cust_name VARCHAR(25),
+       product_name VARCHAR(25),
+       quantity INT,
+       unit_price FLOAT,
+       total FLOAT,
+       bill_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
    ```
 
 3. **Configure database credentials:**
@@ -59,7 +71,7 @@ You can add/view/search customers, products, and staff, and display a basic stoc
    }
    ```
 
-4. **Add stock file:(Optional)**
+4. **Add stock file :**
    Create `test.txt` in the project root if you want to test the stock report.
 
 ## How to Run
@@ -72,8 +84,7 @@ python main_gui.py
 - Username: `asql`
 - Password: `your_password`
 
-After login, use the menu buttons to add, view, or search records and see the stock report.
-
-## Notes
-- `config.py` and passwords are kept out of Git via `.gitignore`.
-- This project is mainly for learning Python + MySQL + Tkinter basics.
+After login, use the menu buttons to:
+- Add/view/search customers, products, and staff.
+- Use the billing module (via new “Generate Bill” / “Billing” menu) to record sales.
+- View stock report from `test.txt`.
