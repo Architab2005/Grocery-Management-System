@@ -88,3 +88,6 @@ After login, use the menu buttons to:
 - Add/view/search customers, products, and staff.
 - Use the billing module (via new “Generate Bill” / “Billing” menu) to record sales.
 - View stock report from `test.txt`.
+
+## 📄 License
+This project is licensed under the MIT License.
