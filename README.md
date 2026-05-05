@@ -17,6 +17,20 @@ You can add/view/search customers, products, and staff, generate bills, and disp
 - `mysql-connector-python` (installed via `requirements.txt`)
 - Tkinter (built‑in in Python)
 
+## File Structure
+grocery_management_system/
+├── main.py
+├── main_gui.py
+├── billing.py
+├── prediction.py
+├── dashboard.py
+├── config.py
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+├── README.md
+└── test.txt
+
 ## Setup
 
 1. **Install Python packages:**

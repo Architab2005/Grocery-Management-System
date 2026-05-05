@@ -10,7 +10,6 @@ env/
 
 # Environment / config files (keep passwords local)
 .env
-config.py
 config.py.bak
 
 # Editors / IDEs
@@ -18,3 +17,6 @@ config.py.bak
 .idea/
 *.swp
 *~
+
+# Allow ONLY this file
+!config.py
